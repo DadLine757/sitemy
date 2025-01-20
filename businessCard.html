@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+      body, html {
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+      font-family: "Lato", serif;
+        background-color: #101010;
+      }
+      .title {
+        color: #404040;
+        font-size: 50px;
+        display: flex;
+        position: absolute;
+        left: 10px;
+      }
+        .title-name {
+          color: white;
+         font-size: 48px;
+        display: flex;
+        position: absolute;
+        left: 70px;
+      }
+      .specific {
+       color: #303030;
+       font-size: 25px;
+       display: flex;
+       position: absolute;
+       top: 60px;
+       left: 72px;
+      }
+      .specific-title {
+        color: #202020;
+        font-size: 25px;
+        display: flex;
+        position: absolute;
+        left: 10px;
+        top: 61px;
+      }
+      
+      .button-aboutme {
+        width: 100px;
+        height: 30px;
+        color: white;
+        background-color: #171717;
+        position: absolute;
+       left: 55px;
+        top: 100px;
+        border: 1px solid #7c7c7c;
+        border-radius: 5px;
+        font-family: Monospace;
+        font-size: 14px;
+      }
+      .button-dm {
+        width: 50px;
+        height: 30px;
+        color: #949494;
+        background-color: #171717;
+        position: absolute;
+       left: 175px;
+        top: 100px;
+        border: 1px solid #7c7c7c;
+        border-radius: 4px;
+        font-family: Monospace;
+        font-size: 14px;
+        text-align: center;
+      }
+      .button-channel {
+width: 100px;
+        height: 30px;
+        color: #949494;
+        background-color: #171717;
+        position: absolute;
+       left: 240px;
+        top: 100px;
+        border: 1px solid #7c7c7c;
+        border-radius: 5px;
+        font-family: Monospace;
+        font-size: 14px;
+      }
+      .line {
+      width: 330px;
+        height: 2px;
+        background-color: #171717;
+       position: absolute;
+        top: 114px;
+        left: 30px;
+      }
+      .hobbies-title {
+        color: #6b6b6b;
+        font-size: 28px;
+        display: flex;
+        position: absolute;
+        left: 15px;
+        top: 150px;
+      }
+      .hobbies-text {
+        color: white;
+        font-size: 28px;
+        position: absolute;
+        left: 50px;
+        top: 150px;
+      }
+      .hobbies-des1 {
+       color: white;
+       font-size: 15px;
+       font-family: Monospace;
+        position: absolute;
+        top: 190px;
+        left: 50px;
+      }
+      .hobbies-des1pop {
+        color: #646464;
+        position: absolute;
+        top: 185px;
+        left: 30px;
+        font-size: 20px;
+      }
+       .hobbies-des2 {
+       color: white;
+       font-size: 15px;
+       font-family: Monospace;
+        position: absolute;
+        top: 220px;
+        left: 50px;
+      }
+      .hobbies-des2pop {
+        color: #646464;
+        position: absolute;
+        top: 215px;
+        left: 30px;
+        font-size: 20px;
+      }
+      
+         .skills-title {
+        color: #6b6b6b;
+        font-size: 28px;
+        display: flex;
+        position: absolute;
+        left: 15px;
+        top: 320px;
+      }
+      .skills-text {
+        color: white;
+        font-size: 28px;
+        position: absolute;
+        left: 50px;
+        top: 320px;
+      }
+      .skills-des1 {
+       color: white;
+       font-size: 15px;
+       font-family: Monospace;
+        position: absolute;
+        top: 360px;
+        left: 50px;
+      }
+      .skills-des1pop {
+        color: #646464;
+        position: absolute;
+        top: 355px;
+        left: 30px;
+        font-size: 20px;
+      }
+       .skills-des2 {
+       color: white;
+       font-size: 15px;
+       font-family: Monospace;
+        position: absolute;
+        top: 390px;
+        left: 50px;
+      }
+      .skills-des2pop {
+        color: #646464;
+        position: absolute;
+        top: 385px;
+        left: 30px;
+        font-size: 20px;
+      }
+      
+               .more-title {
+        color: #6b6b6b;
+        font-size: 28px;
+        display: flex;
+        position: absolute;
+        left: 15px;
+        top: 490px;
+      }
+      .more-text {
+        color: white;
+        font-size: 28px;
+        position: absolute;
+        left: 50px;
+        top: 490px;
+      }
+         .more-des1 {
+       color: #3e3e3e;
+       font-size: 15px;
+       font-family: Monospace;
+        position: absolute;
+        top: 530px;
+        left: 50px;
+      }
+        .more-des2 {
+       color: #3e3e3e;
+       font-size: 15px;
+       font-family: Monospace;
+        position: absolute;
+        top: 555px;
+        left: 50px;
+      }
+      
+      .titles {
+         color: #3e3e3e;
+        font-size: 12px;
+        font-family: Monospace;
+        position: absolute;
+        top: 750px;
+     
+      }
+    </style>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    
+    <div class="title">
+     <b>#</b>
+    </div>
+    <div class="title-name">
+      <b>ipabuilder</b>
+    </div>
+    
+    <div class="specific">
+      <b>iOS Dev</b>
+    </div>
+    <div class="specific-title">
+      
+      <b>##</b>
+    </div>
+    
+    <div class="line">
+      
+    </div>
+                
+    <button class="button-aboutme" onclick="buttonAboutme()">
+      <b>about me</b>
+    </button>
+    <button class="button-dm" onclick="buttonDm()">
+      
+      <b>dm</b>
+    </button>
+    <button class="button-channel" onclick="buttonChannel()">
+     channel
+    </button>
+    
+    <div class="hobbies-title">
+      <b>#</b>
+    </div>
+    <div class="hobbies-text">
+      <b>hobbies</b>
+    </div>
+    <div class="hobbies-des1pop">
+      -
+    </div>
+    <div class="hobbies-des1">
+      pastings sites, how and the
+    </div>
+    
+    <div class="hobbies-des2pop">
+      -
+    </div>
+    <div class="hobbies-des2">
+      write ios apps / games
+    </div>
+    
+    <div class="skills-title">
+      <b>#</b>
+    </div>
+    <div class="skills-text">
+     <b>skills</b>
+    </div>
+    <div class="skills-des1pop">
+      -
+    </div>
+    <div class="skills-des1">
+      c++, c#, js, html, css
+    </div>
+    <div class="skills-des2pop">
+      -
+    </div>
+    <div class="skills-des2">
+      swiftui, swift, low objc
+    </div>
+    
+    <div class="more-title">
+     <b>#</b>
+    </div>
+    <div class="more-text">
+      <b>more</b>
+    </div>
+    <div class="more-des1">
+      ник в тг procode fanat fzm, 
+    </div>
+    <div class="more-des2">
+      обучаю написанию программ и тд
+    </div>
+    
+    <div class="titles">
+      <center>сайт спащен мною с нуля, использовал онли телефон :)</center>
+    </div>
+    <script>
+   function buttonChannel() {
+    window.open("https://t.me/bio_procoda");
+   }
+      function buttonDm() {
+        window.open("https://t.me/ImguiDrawView");
+      }
+      
+      function buttonAboutme() {
+        window.open("    ");
+      }
+    </script>
+  </body>
+</html>
